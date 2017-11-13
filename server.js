@@ -76,5 +76,6 @@ app.post('/api/users', function (req, res) {
 app.get('/users', users.findAll);
 app.get('/users/search', users.findById);
 app.get('/users/role/:role', users.findByRole);
+app.get('/users/expired/:expired', users.expired);
 
 app.listen(3000, () => console.log('Server is running at http://localhost:3000'));
